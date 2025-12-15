@@ -14,7 +14,7 @@
       ],
       "allowFetchTxt": false,
       "bagItProfileInfo": {
-        "bagItProfileIdentifier": "https://raw.githubusercontent.com/",
+        "bagItProfileIdentifier": "https://raw.githubusercontent.com/SENYLRC/DDA-Dart/refs/heads/main/Southeastern-DDA-v1.json",
         "bagItProfileVersion": "",
         "contactEmail": "noc@senylrc.org",
         "contactName": "Z. Spalding",
