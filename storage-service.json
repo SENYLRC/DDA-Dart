@@ -1,0 +1,24 @@
+{
+  "id": "114f72ec-32a6-49e1-aaf7-a5021d2e65f6",
+  "name": "Export Settings - 15 Dec 25 09:34 EST",
+  "appSettings": [],
+  "bagItProfiles": [],
+  "questions": [],
+  "remoteRepositories": [],
+  "storageServices": [
+    {
+      "id": "9c5f7603-8830-44d3-a224-9be5c83e10ed",
+      "allowsDownload": true,
+      "allowsUpload": true,
+      "bucket": "senylrc-file-transfer",
+      "description": "",
+      "host": "s3.amazonaws.com",
+      "login": "<your login>",
+      "loginExtra": "",
+      "name": "Southeastern DDA",
+      "password": "<your password>",
+      "port": 0,
+      "protocol": "s3"
+    }
+  ]
+}
