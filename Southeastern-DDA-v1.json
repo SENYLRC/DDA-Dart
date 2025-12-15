@@ -82,7 +82,7 @@
           "wasAddedForJob": false
         },
         {
-          "defaultValue": "Test Orgnaization",
+          "defaultValue": "",
           "emptyOK": false,
           "help": "The name of the organization that produced this bag, or is responsible for its contents.",
           "id": "567451b6-1f30-4bda-b66b-9a657426d5e5",
@@ -238,7 +238,7 @@
         {
           "defaultValue": "",
           "emptyOK": true,
-          "help": "The description of the bag that you want to appear in the APTrust registry.",
+          "help": "The description of the bag that you want to appear.",
           "id": "d94d1d47-49cb-4569-8d27-d9ebbf25c9b2",
           "isBuiltIn": true,
           "isUserAddedFile": false,
@@ -253,7 +253,7 @@
         {
           "defaultValue": "Standard",
           "emptyOK": false,
-          "help": "How do you want this bag to be stored in APTrust? Standard = S3/Virginia + Glacier/Oregon. Glacier-OH = Glacier-only storage in Ohio. Glacier-OR = Glacier-only storage in Oregon. Glacier-VA = Glacier-only storage in Virginia. Standard storage includes regular 90-day fixity checks. Glacier-only storage is less expensive but excludes fixity checks. File in Glacier-only storage may take up to 24 hours longer to restore and excessive Glacier retrieval may incur additional fees.",
+          "help": "All bags stored in AWS Glacier",
           "id": "53075007-e6cf-4a18-9b34-caa605ed593f",
           "isBuiltIn": true,
           "isUserAddedFile": false,
@@ -263,15 +263,7 @@
           "tagName": "Storage-Option",
           "userValue": "",
           "values": [
-            "Standard",
-            "Glacier-OH",
-            "Glacier-OR",
-            "Glacier-VA",
-            "Glacier-Deep-OH",
-            "Glacier-Deep-OR",
-            "Glacier-Deep-VA",
-            "Wasabi-OR",
-            "Wasabi-VA"
+            "Standard"
           ],
           "wasAddedForJob": false
         }
