@@ -92,7 +92,7 @@
           "required": true,
           "tagFile": "bag-info.txt",
           "tagName": "Source-Organization",
-          "userValue": "Test Orgnaization",
+          "userValue": "Test Organization",
           "values": [],
           "wasAddedForJob": false
         },
