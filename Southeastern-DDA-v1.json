@@ -1,313 +1,49 @@
 {
-  "id": "fd6231d1-8f1b-4cc2-8bbd-d41bc11763fe",
-  "name": "Export Settings - 11 Dec 25 11:56 EST",
-  "appSettings": [],
-  "bagItProfiles": [
-    {
-      "id": "42cf4b21-1a39-4470-a28b-f8b3b16e86e2",
-      "acceptBagItVersion": [
-        "0.97",
-        "1.0"
-      ],
-      "acceptSerialization": [
-        "application/tar"
-      ],
-      "allowFetchTxt": false,
-      "bagItProfileInfo": {
-        "bagItProfileIdentifier": "https://raw.githubusercontent.com/SENYLRC/DDA-Dart/refs/heads/main/Southeastern-DDA-v1.json",
-        "bagItProfileVersion": "",
-        "contactEmail": "noc@senylrc.org",
-        "contactName": "Z. Spalding",
-        "externalDescription": "BagIt profile for ingesting content into Southeastern DDA. Updated December 15, 2025.",
-        "sourceOrganization": "senylrc.org",
-        "version": "2.2"
-      },
-      "baseProfileId": "",
-      "description": "BagIt profile for ingesting content into Southeastern DDA. Updated December 15, 2025.",
-      "isBuiltIn": false,
-      "manifestsAllowed": [
-        "sha512",
-        "sha256",
-        "md5"
-      ],
-      "manifestsRequired": [
-        "md5"
-      ],
-      "name": "senylrc.org (version 2.2) Dec 15 09:26:54",
-      "serialization": "required",
-      "tagFilesAllowed": [
-        "*"
-      ],
-      "tagFilesRequired": [
-        ""
-      ],
-      "tagManifestsAllowed": [
-        "sha512",
-        "sha256",
-        "md5"
-      ],
-      "tagManifestsRequired": [],
-      "tags": [
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "The number of bags that make up this object. Set this only if you are packaging a single object into multiple bags. See https://wiki.aptrust.org/Bagging_specifications for info on naming multi-part APTrust bags.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Bag-Count",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "Identifies the logical group or collection to which a bag belongs. Several bags may share the same Bag-Group-Identifier to indicate that they are part of the same logical grouping.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Bag-Group-Identifier",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "The date this bag was created. The bagging software should set this automatically.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Bagging-Date",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "The name of the software that created this bag. The bagging software should set this automatically.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Bagging-Software",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "A description of the bag's contents for the sender's internal use. This description will appear in the Southeastern registry if you do not set the Description tag in the southeastern-info.txt file.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Internal-Sender-Description",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "A unique identifier for this bag inside your organization.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Internal-Sender-Identifier",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": true,
-          "help": "The number of files and bytes in this bag's payload. This should be calculated and set by the bagging software.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Payload-Oxum",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "The name of the organization that produced this bag, or is responsible for its contents.",
-          "id": "",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": true,
-          "tagFile": "bag-info.txt",
-          "tagName": "Source-Organization",
-          "userValue": "",
-          "values": [],
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "1.0",
-          "emptyOK": false,
-          "help": "Which version of the BagIt specification describes this bag's format?",
-          "id": "7801bc8c-3f57-415a-884e-841b76727ec2",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": true,
-          "tagFile": "bagit.txt",
-          "tagName": "BagIt-Version",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "UTF-8",
-          "emptyOK": false,
-          "help": "How are this bag's plain-text tag files encoded? (Hint: usually UTF-8)",
-          "id": "31c4e8b2-9ec9-41ba-99d7-dcc82c57f8f8",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": true,
-          "tagFile": "bagit.txt",
-          "tagName": "Tag-File-Character-Encoding",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "a5863a40-b4ff-421e-b9e0-238adf1f7ef5",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Bag-Size",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "1baef334-4ce3-4233-a212-627a55c610da",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Contact-Email",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "e9ae75b6-7986-42ff-a78d-dedb1b294dce",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Contact-Name",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "d264dba2-ffc1-44d2-b3f8-f4555026494e",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Contact-Phone",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "76b583e8-a13f-4f96-97b0-9f3280340f95",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "External-Description",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "95560b6a-6455-40b7-a116-6475596ee48d",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "External-Identifier",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        },
-        {
-          "defaultValue": "",
-          "emptyOK": false,
-          "help": "",
-          "id": "f4cc6bff-7acc-44c1-9b61-52bb8398900b",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "required": false,
-          "tagFile": "bag-info.txt",
-          "tagName": "Organization-Address",
-          "userValue": "",
-          "values": null,
-          "wasAddedForJob": false
-        }
-      ],
-      "tarDirMustMatchName": false
-    }
-  ],
-  "questions": [],
-  "remoteRepositories": [],
-  "storageServices": []
+  "BagIt-Profile-Info": {
+    "BagIt-Profile-Identifier": "https://raw.githubusercontent.com/",
+    "BagIt-Profile-Version": "",
+    "Contact-Email": "noc@senylrc.org",
+    "Contact-Name": "Z. Spalding",
+    "External-Description": "BagIt profile for ingesting content into Southeastern DDA. Updated December 15, 2025.",
+    "Source-Organization": "senylrc.org",
+    "Version": "2.2"
+  },
+
+  "Accept-BagIt-Version": ["0.97", "1.0"],
+  "Accept-Serialization": ["application/tar"],
+  "Serialization": "required",
+  "Allow-Fetch.txt": false,
+
+  "Manifests-Allowed": ["sha512", "sha256", "md5"],
+  "Manifests-Required": ["md5"],
+  "Tag-Manifests-Allowed": ["sha512", "sha256", "md5"],
+  "Tag-Manifests-Required": [],
+
+  "Tag-Files-Allowed": ["*"],
+  "Tag-Files-Required": [],
+
+  "BagIt": {
+    "BagIt-Version": { "required": true, "default": "1.0" },
+    "Tag-File-Character-Encoding": { "required": true, "default": "UTF-8" }
+  },
+
+  "Bag-Info": {
+    "Source-Organization": { "required": true },
+
+    "Bag-Count": { "required": false },
+    "Bag-Group-Identifier": { "required": false },
+    "Bagging-Date": { "required": false },
+    "Bagging-Software": { "required": false },
+    "Internal-Sender-Description": { "required": false },
+    "Internal-Sender-Identifier": { "required": false },
+    "Payload-Oxum": { "required": false },
+
+    "Bag-Size": { "required": false },
+    "Contact-Email": { "required": false },
+    "Contact-Name": { "required": false },
+    "Contact-Phone": { "required": false },
+    "External-Description": { "required": false },
+    "External-Identifier": { "required": false },
+    "Organization-Address": { "required": false }
+  }
 }
